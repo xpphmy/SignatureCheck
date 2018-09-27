@@ -1,0 +1,366 @@
+*{
+			margin: 0;padding:0;border: none;
+		}
+		body,html{
+			width: 100%;
+			color: #fff;
+
+			/*height: 10%;
+			min-height:700px;*/
+		}
+		#box{
+			width: 100%;
+			height: 100%;
+			/*min-height:800px;*/
+			background:#fff;
+			position: fixed;
+			/*position: relative;*/
+		}
+		#box nav{
+			width: 100%;
+			height:100px;
+			background:url(../images/header.png) 0 0;
+			background-size:cover;
+			position: absolute;left: 0;top: 0;z-index:22;
+			border-bottom: 2px solid #1e4f70;
+		}
+		#box .header{
+			width: 90%;
+			height: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		#box nav img{
+			width: 170px;
+			height:40px;
+			margin-top: 30px;
+			display: block;
+			float: left;
+		}
+	
+		#box .title1{
+			/*width: 300px;*/
+			height: 100px;
+			margin-left:20px;
+			line-height:100px;
+			font-size: 36px;
+			display: block;
+			float: left;
+			letter-spacing:2px;
+		}
+		#box .title2{
+			font-size: 24px;
+			margin-left:10px;
+		}
+		#box .headerRight{
+			width:50px;
+			height: 50px;
+			float: right;
+			display: block;
+			margin:0 5px;
+		}
+		#box .headerRight img{
+			width:50px;
+			height: 50px;
+		}
+
+/*center*/
+		.center{
+			width: 100%;
+			height:100%;
+			overflow: hidden;
+			position: absolute;left: 0;top: 100px;
+		}
+		/*center_Left*/
+		.centerLeft{
+			width:17%;
+			height: 100%;
+			float: left;
+			background: #dce8ec;
+			border-right: 2px solid #1e4f70;
+		}
+		.LeftTop{
+			width: 100%;
+			height: 70px;
+			background: #59abf0 url(../images/aside6.png) 40px center no-repeat;
+			text-align: center;
+			font-size:22px;
+			line-height: 70px;
+			font-weight:600;
+		}
+
+	/*center_Right*/
+		.centerRight{
+			width: 82.3%;
+			height: 100%;
+			float: left;
+			margin-left:0.5%;
+			color: #333;
+			overflow: hidden;
+			display: none;
+		}
+		.centerRight .cenRightTop{
+			width: 100%;
+			height:50px;
+			line-height: 50px;
+			text-indent:40px;
+			background: #f5f5f5 url(../images/icon1.png) 20px center no-repeat;
+			overflow: hidden;
+			border-bottom: 2px solid #bfbfbf;
+		}
+		.centerRight .add{
+			float: left;
+		}
+		.centerRight .time{
+			padding-right:5%;
+			float: right;
+		}
+		.centerRight .backgroundColor{
+			width: 100%;
+			height: 3px;
+			background: #e3e3e3;
+		}
+		.centerRight .inner{
+			width:98%;
+			height: 73.5%;
+			margin: 20px auto 0;
+			background:#f1f1f1;
+			border:2px solid #b1b8be;
+		}
+		.centerRight .inner p{
+			width: 100%;
+			height: 50px;
+			background: #d6e3ef;
+			border-bottom: 3px solid #50accf;
+			overflow: hidden;
+		}
+		.inner p span{
+			width: 100px;
+			height: 40px;
+			margin:10px 0 0 20px;
+			line-height: 40px;
+			background: #1b7acc;
+			display: block;
+			text-align: center;
+			color: #fff;
+			border-radius:5px 5px 0 0/5px  5px 0 0;
+			-webkit-border-radius:5px 5px 0 0/5px  5px 0 0;
+			-o-border-radius:5px 5px 0 0/5px  5px 0 0;
+			-moz-border-radius:5px 5px 0 0/5px  5px 0 0;
+			-ms-border-radius:5px 5px 0 0/5px  5px 0 0;
+			behavior: url(../css/PIE.htc);
+		}
+		.cen_inner{
+			width:500px;
+			height: 250px;
+			border:1px solid #59abf0;
+			margin: 30px auto 0;
+			background: #fff;
+		}
+		.cen_inner h2{
+			width: 100%;
+			height: 40px;
+			background: #59abf0;
+			line-height: 40px;
+			text-indent: 20px;
+			color: #fff;
+		}
+		.inner .cen_inner_input{
+			width: 90%;
+		/*	height:50px;*/
+			overflow: hidden;
+			margin:50px auto 30px;
+			line-height: 42px;
+		}
+		.cen_inner_input input{
+			width:270px;
+			height:40px;
+			line-height: 40px;
+			border:1px solid #ccc;
+			text-indent: 10px;
+		}
+		.cen_inner_input button{
+			width:90px;
+			height: 42px;
+			margin-left: 5px;
+			text-align: center;
+			color: #fff;
+			background: #7f9db9;
+			cursor: pointer;
+		}
+		.cen_inner_input span,.cen_inner_input input,.cen_inner_input button{
+			display: block;
+			float: left;
+		}
+		.cen_btn{
+			width:110px;
+			height: 42px;
+			margin: 0 auto;
+			text-align: center;
+			color: #fff;
+			background: #59abf0;
+			cursor: pointer;
+			display: block;
+		}
+		.cen_btn:hover{
+			background:#1b7acc;
+		}
+
+		.centerRight .inner .inn_tab{
+			color: #333;
+			float: left;
+			background: url(../images/back0.png) repeat-x   !important;
+			cursor: pointer;
+		}
+		.centerRight .inner .select{
+			color: #fff;
+			background: #1b7acc !important;
+		}
+		.centerRight .inn_tab:hover{
+			color: #fff;
+			background: #1b7acc;
+		}
+		.centerRight .sect{
+			display: none;
+		}
+		.centerRight .inner .block0{
+			display: block;
+		}
+
+		.sect_inner{
+			background: url(../images/icon2.png) 3px center no-repeat;
+			color: red;
+			text-indent:40px;
+			font-size: 18px;
+			line-height:45px;
+		}
+		.sect_inner img{
+			width:30px;
+			height: 30px;
+		}
+		#show{
+			background: #59abf0;
+    		color: #fff;
+		}
+/*设备管理——网络配置*/
+		.inner .wgs{
+			height: 40px;
+			line-height: 35px;
+			margin: 10px auto;
+		}
+		.inner .wgs input{
+			height: 35px;
+			line-height: 35px;
+		}
+/*系统管理——关机重启*/
+	.cen_inner .sectIn{
+		margin:40px auto 25px;
+		background: url(../images/icon.jpg) 50px center no-repeat;
+		padding-left:78px;
+		color: #333;
+		line-height:30px;
+		overflow: hidden;
+	}
+	.cen_inner .sectIn h4{
+		line-height:35px;
+	}
+	.cen_inner .sectIn div{
+		font-size: 15px;
+	}
+	.cen_inner .cenBtn0{
+		float: left;
+		margin:0 70px 0 100px;
+	}
+	.cenBtn1{
+		float: left;
+		margin-right:100px;
+		background: #a9a9a9;
+		color: #333;
+	}
+	.cenBtn1:hover{
+		color: #fff;
+	}
+	/*设备管理——网络配置*/
+	.spans0{
+		width: 90px;
+		margin-left: 30px;
+	}
+/*用户管理——新建用户*/
+	.table0 .cen_inner{
+		width:580px;
+		height: 450px;
+	}
+	.table0 .cen_inner .cen_inner_input{
+		margin: 10px auto;
+		line-height: 35px;
+	}
+	.table0 .cen_inner input{
+		width: 350px;
+		height: 35px;
+		line-height: 35px;
+	}
+	.table0 .cen_inner .cen_table_inner{
+		margin: 10px auto 0;
+		height: 210px;
+		overflow: hidden;
+	}
+	.table0 .cen_inner .cen_table_inner span{
+		float: left;
+	}
+	.table0 .cen_inner .cenInner{
+		border:1px solid #ccc;
+		height: 200px;
+		width: 350px;
+		float: left;
+	}
+/*用户管理——用户列表*/
+	.inTable table{
+		border-collapse: collapse;
+		border:1px solid #FFFFFF;
+	}
+	.inTable table td{
+		text-align:center;
+		height:30px;
+		font-size:12px;
+		line-height:30px;
+		border:1px solid #ccc;
+	}
+/*用户管理——用户列表*/
+	.table_managers{
+		width: 100%;
+		border:1px solid red;border-collapse:collapse;
+	}
+	.table_managers th,.table_managers td{
+		border:1px solid #ccc;
+		text-align: center;
+	}
+	.table_managers th:first-child{
+		width: 10%;
+	}
+/*日志查询——按时间查询*/
+	.table_time_query input{
+		width: 120px;
+		height: 33px;
+		border:1px solid #ccc;
+	}
+/*footer*/
+	.footer{
+		width: 100%;
+		height: 50px;
+		background: #1b7acc;
+		text-align: center;
+		line-height: 50px;
+		position: absolute;bottom: 0;left: 0;z-index: 22;
+	}
+@media screen and (max-width:1200px){
+	.centerLeft{
+		width:25%;
+	}
+	.centerRight{
+		width: 74.2%;
+	}
+	.LeftTop{
+		background: #59abf0 url(../images/aside6.png) 20px center no-repeat;
+		font-size:16px;
+	}
+}
