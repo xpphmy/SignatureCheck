@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 条件引入html5.js -->
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+
+	<style>
+		*{
+			margin: 0;padding: 0;border:none;overflow: hidden;
+		}
+		body,html{
+            width: 100%;
+            height:100%;
+            -webkit-user-select:none;
+            -webkit-touch-callout:none;-webkit-overflow-scrolling:touch;/*ios */
+            -webkit-font-smoothing:antialiased; /* //mac*/
+            border:none;
+        }
+        body{
+        	margin: 0;
+            font-size: 16px;
+            font-family: "Microsoft Yahei", "微软雅黑", arial;
+            border:none;
+        }
+        input{
+        	background: none;
+        }
+		.nav_P{
+			width: 100%;
+			height:100%;
+			position: absolute;left: 0;top: 0;z-index: -100;
+		}
+		.nav_P img{
+			width: 100%;
+			height: 100%;
+		}
+		nav{
+            width: 100%;
+            margin: 60px auto 0;
+            overflow: hidden;
+            text-align: center;
+        }
+		nav img{
+			width: 9em;
+            height: 50px;
+		}
+		nav span{
+            padding-left: 20px;
+            color: #fff;
+            font-size: 2.2em;
+            letter-spacing: 4px;
+            font-weight: 600;
+            /* line-height: 100px; */
+            text-shadow: -5px -4px 5px rgba(4,133,255,1),3px 3px 3px rgba(168,168,168,1);
+            -webkit-text-shadow: -5px -4px 5px rgba(4,133,255,1),3px 3px 3px rgba(168,168,168,1);
+            -moz-text-shadow: -5px -4px 5px rgba(4,133,255,1),3px 3px 3px rgba(168,168,168,1);
+            -o-text-shadow: -5px -4px 5px rgba(4,133,255,1),3px 3px 3px rgba(168,168,168,1);
+            -ms-text-shadow: -5px -4px 5px rgba(4,133,255,1),3px 3px 3px rgba(168,168,168,1);
+            behavior: url(css/PIE.htc); /* 可以让IE 6,7,8模拟部分的CSS3属性 */
+        }
+		/*main*/
+         section{
+            width:500px;
+            height:540px;
+            background:rgba(255,255,255,0.6);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+            margin:50px auto 0;
+            padding: 40px 0 0 50px;
+            border-radius: 0.5em;
+            -webkit-border-radius: 0.5em;
+	        -moz-border-radius: 0.5em;
+            -o-border-radius: 0.5em;
+            -ms-border-radius: 0.5em;
+            box-shadow:2px 1px 4px 4px rgba(89,144,220,0.5);
+            -webkit-box-shadow:2px 1px 4px 4px rgba(89,144,220,0.5);
+            -moz-box-shadow:2px 1px 4px 4px rgba(89,144,220,0.5);
+            -o-box-shadow:2px 1px 4px 4px rgba(89,144,220,0.5);
+            -ms-box-shadow:2px 1px 4px 4px rgba(89,144,220,0.5);
+            font-size:1.4em;
+            color: #1eb3d8;
+            line-height: 60px;
+            behavior: url(CSS/PIE.htc);
+        }
+        section input{
+            width: 318px;
+            height: 30px;
+            border:1px solid #1eb3d8;
+            font-size: .8em;
+        }
+        button{
+            display: block;
+            width: 150px;
+            height: 35px;
+            line-height:35px;
+            text-align: center;
+            letter-spacing: 10px;
+            font-size: .9em;
+            margin: 25px 0 0 27%;
+            background: #1eb3d8;
+            border:none;
+            cursor: pointer;
+        }
+
+        section:hover{
+        	background:rgba(255,255,255,0.7);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2ffffff,endColorstr=#B2ffffff);
+            box-shadow:2px 1px 3px 5px rgba(89,144,220,1);
+            -webkit-box-shadow:2px 1px 3px 5px rgba(89,144,220,1);
+            -moz-box-shadow:2px 1px 3px 5px rgba(89,144,220,1);
+            -o-box-shadow:2px 1px 3px 5px rgba(89,144,220,1);
+            -ms-box-shadow:2px 1px 3px 5px rgba(89,144,220,1);
+            behavior: url(CSS/PIE.htc);
+        }
+        .box{
+        	width:100%;
+        	overflow: hidden;
+        }
+        .box span{
+			padding: 0;
+			float: left;
+        }
+        .box .inner{
+        	width:320px;
+        	height: 270px;
+        	margin: 20px auto 0;
+        	border:1px solid #1eb3d8;
+        	float: left;
+        }
+        section a{
+        	color: #fff;
+        	text-decoration: none;
+        }
+	</style>
+</head>
+<body>
+    <div class="nav_P">
+        <img src="images/bg1.png" alt="">
+    </div>
+    <nav>
+    	<img src="images/logo.png" alt="">
+        <span>签名验签服务器系统V1.0</span>
+    </nav>
+    <section>
+        用户名：<input type="text"><br>
+        密&nbsp&nbsp&nbsp码：<input type="text"><br>
+        <div class="box">
+        	<span>证&nbsp&nbsp&nbsp书：</span>
+        	<div class="inner"></div>
+        </div>
+        <button><a href="signatureCheck.html">登录</a></button>
+    </section>
+</body>
+
+</html>
